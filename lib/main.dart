@@ -11,14 +11,14 @@ class Home extends StatelessWidget{
   {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My FIrst App'),
+        title: Text('My First App'),
         centerTitle: true,
         backgroundColor: Colors.red[300],
+
       ),
-      body: Center(
-        child: Image(
-          image: NetworkImage('https://cdn.spacetelescope.org/archives/images/wallpaper2/heic1509a.jpg'),
-        ),
+      body: Padding(
+        padding: EdgeInsets.all(30.0),
+        child: Text("Hello"),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
@@ -26,5 +26,4 @@ class Home extends StatelessWidget{
         backgroundColor: Colors.red[600],
       ),
     );
-
   }}
